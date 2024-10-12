@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tank-container {
+    position: relative;
+    width: 150px;
+    height: 300px;
+    border: 5px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+#water-tank {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: lightgray;
+}
+
+#water-level {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: blue;
+    transition: height 1s ease, background-color 1s ease;
+}
+
+.data-display {
+    margin-top: 20px;
+}
+
+#level-display, #quality-display, #motor-display {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .tank-container {
+        width: 150px;
+        height: 300px;
+    }
+}
